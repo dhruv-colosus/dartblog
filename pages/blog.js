@@ -16,7 +16,7 @@ const Blog = (props) => {
 
             {data.map((item) => {
               return (
-                <div className={styles.blogItem}>
+                <div key={item.title} className={styles.blogItem}>
                   <Link href={`blogpost/${item.slug}`}>
                     <h3>{item.title}</h3>
                   </Link>

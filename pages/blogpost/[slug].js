@@ -3,7 +3,7 @@ import Router, { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import styles2 from "../../styles/BlogPost.module.css";
 
-const slug = (props) => {
+const Slug = (props) => {
   const router = useRouter();
   console.log(router.query);
   // const { slug } = router.query;
@@ -50,4 +50,4 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default slug;
+export default Slug;
