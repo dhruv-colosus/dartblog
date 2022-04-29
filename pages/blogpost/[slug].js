@@ -24,6 +24,7 @@ const slug = (props) => {
   return (
     <>
       <div className={styles.container}>
+        <p></p>
         <main className={styles2.main}>
           <h1>{data.title}</h1>
 
