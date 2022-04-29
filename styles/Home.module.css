@@ -1,0 +1,116 @@
+@font-face {
+  font-family: header;
+  src: url(../fonts/coolvetica-kit/coolvetica_rg-webfont.woff);
+}
+@font-face {
+  font-family: meslo;
+  src: url(../fonts/Fontfabric\ -\ Mont\ Heavy\ DEMO.otf);
+}
+@font-face {
+  font-family: jakarta;
+  src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Medium.otf);
+}
+@font-face {
+  font-family: jakartalight;
+  src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Light.otf);
+}
+@font-face {
+  font-family: jakartabold;
+  src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Bold.otf);
+}
+@font-face {
+  font-family: revo;
+  src: url(../fonts/REVOLUTION.ttf);
+}
+@font-face {
+  font-family: vogue;
+  src: url(../fonts/Vogue.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+.container {
+  margin: 0;
+  padding: 0 0rem;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-family: jakarta;
+}
+.navbar {
+  padding-left: 0;
+  margin: 0rem 10rem -3.5rem 10rem;
+  padding-top: 1rem;
+}
+.navbar ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: meslo;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0 2rem 0 2rem;
+}
+
+.navbar ul li:hover {
+  color: rgb(159, 159, 159);
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 12rem;
+  font-family: header;
+  letter-spacing: 6px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+}
+.description {
+  text-align: center;
+  color: rgb(147, 147, 147);
+}
+
+.description {
+  margin: 1rem 0 1rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.blogItem h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.blogItem p {
+  font-family: "Poppins";
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  color: rgb(210, 210, 210);
+}
