@@ -47,12 +47,27 @@
   font-family: meslo;
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: rgb(159, 159, 159);
   padding: 0 2rem 0 2rem;
 }
 
+.home {
+  color: rgb(255, 255, 255) !important;
+}
+.contact {
+  color: rgb(255, 255, 255) !important;
+}
+
+.blog {
+  color: rgb(255, 255, 255) !important;
+}
+
+.about {
+  color: rgb(255, 255, 255) !important;
+}
+
 .navbar ul li:hover {
-  color: rgb(159, 159, 159);
+  color: rgb(255, 255, 255);
   transition: all 100ms ease-in;
   cursor: pointer;
 }
