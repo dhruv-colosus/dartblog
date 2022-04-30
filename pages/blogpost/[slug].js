@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Router, { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import styles2 from "../../styles/BlogPost.module.css";
@@ -10,6 +10,7 @@ const Slug = (props) => {
   // const { slug } = router.query;
 
   const [data, setData] = useState(props.myBlog);
+  console.log(data);
   // useEffect(() => {
   //   if (!router.isReady) return;
   //   console.log("UseEffect is working");
@@ -27,9 +28,9 @@ const Slug = (props) => {
       <div className={styles.container}>
         <p></p>
         <main className={styles2.main}>
-          <h1>{data.title}</h1>
+          <h1>{data && data.title}</h1>
 
-          <p className={styles2.desc}>{data.content}</p>
+          <p className={styles2.desc}>{data && data.content}</p>
         </main>
       </div>
     </>
@@ -53,9 +54,10 @@ export async function getStaticProps(context) {
   const { slug } = context.params;
 
   let myBlog = await fs.promises.readFile(`blogdata/${slug}.json`, "utf-8");
+  myBlog = JSON.parse(myBlog);
 
   return {
-    props: { myBlog: JSON.parse(myBlog) }, // will be passed to the page component as props
+    props: { myBlog }, // will be passed to the page component as props
   };
 }
 
